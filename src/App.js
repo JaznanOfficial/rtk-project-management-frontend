@@ -1,14 +1,13 @@
 import React from "react";
-import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
 import "./App.css";
-import Sidebar from "./components/Sidebar/Sidebar";
-import '@coreui/coreui/dist/css/coreui.min.css'
+import Layout from "./components/Layout";
 
 function App() {
     return (
-        <div className="App">
-            <Sidebar />
+        <div className="App bg-purple-50">
+            <div className=" w-10/12 mx-auto py-20">
+                <Layout />
+            </div>
         </div>
     );
 }
