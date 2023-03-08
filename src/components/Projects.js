@@ -1,36 +1,36 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { BsPlusCircleFill } from "react-icons/bs";
 
 const Projects = () => {
     return (
         <div class="flex flex-col">
-            <h2 class="mt-10 text-2xl font-bold">Projects</h2>
+            <div className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 flex flex-row justify-between items-center h-10 px-5 border-1 border-gray-500 rounded-tr-lg rounded-tl-lg static top-0 my-10">
+                <div className="text-xl font-bold text-white">All Project</div>
+                <div className="  inline-block text-white text-3xl font-bold cursor-pointer hover:animate-pulse">
+                    <BsPlusCircleFill />
+                </div>
+            </div>
 
             <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                <div class="flex items-start rounded-xl bg-white p-4 shadow-lg">
-                    <div class="flex h-12 w-12 items-center justify-center rounded-full border border-blue-100 bg-blue-50">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6 text-blue-400"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            stroke-width="2"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                <Link to={"/projects/1"}>
+                    <div class="flex items-start rounded-xl bg-white p-4 shadow-lg">
+                        <div class="flex h-12 w-12 items-center justify-center ">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRisv-yQgXGrto6OxQxX62JyvyQGvRsQQ760g&usqp=CAU"
+                                alt=""
+                                className="w-full h-full rounded-full"
                             />
-                        </svg>
-                    </div>
+                        </div>
 
-                    <div class="ml-4">
-                        <h2 class="font-semibold">574 Messages</h2>
-                        <p class="mt-2 text-sm text-gray-500">Last opened 4 days ago</p>
+                        <div class="ml-4">
+                            <h2 class="font-semibold text-green-500">Kanban Board</h2>
+                            <p class="mt-2 text-sm text-gray-500">Last updated 4 days ago</p>
+                        </div>
                     </div>
-                </div>
+                </Link>
 
-                <div class="flex items-start rounded-xl bg-white p-4 shadow-lg">
+                {/* <div class="flex items-start rounded-xl bg-white p-4 shadow-lg">
                     <div class="flex h-12 w-12 items-center justify-center rounded-full border border-orange-100 bg-orange-50">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@ const Projects = () => {
                         <h2 class="font-semibold">129 Comments</h2>
                         <p class="mt-2 text-sm text-gray-500">Last commented 8 days ago</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     );

@@ -4,7 +4,7 @@ import Layout from "./components/Layout";
 
 function App() {
     return (
-        <div className="App bg-purple-50">
+        <div className="App bg-green-50 min-h-screen">
             <div className=" w-10/12 mx-auto py-20">
                 <Layout />
             </div>

@@ -28,7 +28,7 @@ const Navigation = () => {
                                     </div>
                                     <div class="flex flex-col flex-grow ml-4">
                                         <div class="text-sm text-gray-500">Email</div>
-                                        <p class="font-bold text-lg break-all">jaznanofficial@gmail.com</p>
+                                        <p class="font-bold text-lg break-all text-blue-500">jaznanofficial@gmail.com</p>
                                     </div>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@ const Navigation = () => {
                                     </div>
                                     <div class="flex flex-col flex-grow ml-4">
                                         <div class="text-sm text-gray-500">Name</div>
-                                        <div class="font-bold text-lg">Md Abdur Rahman</div>
+                                        <div class="font-bold text-lg text-green-500">Md Abdur Rahman</div>
                                     </div>
                                 </div>
                             </div>
